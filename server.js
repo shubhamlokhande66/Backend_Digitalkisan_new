@@ -21,7 +21,9 @@ mongoose
   })
   .catch((err) => console.log(err,"No connection !"));
 
+  var UserRouter = require("./routes/users.routes");
 
+  app.use("/user", UserRouter);
 
 
 
